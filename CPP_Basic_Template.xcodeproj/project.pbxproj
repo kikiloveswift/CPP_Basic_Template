@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC414EB31F09E46E0079627F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC414EB21F09E46E0079627F /* main.cpp */; };
 		FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA611F1361A50082122B /* T_Single.cpp */; };
+		FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA661F1387860082122B /* TypeTransfer.cpp */; };
 		FCD663F01F0F97BF00C1542B /* TestRefrence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		FC414EB21F09E46E0079627F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FC7EEA611F1361A50082122B /* T_Single.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = T_Single.cpp; sourceTree = "<group>"; };
 		FC7EEA621F1361A50082122B /* T_Single.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = T_Single.hpp; sourceTree = "<group>"; };
+		FC7EEA661F1387860082122B /* TypeTransfer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypeTransfer.cpp; sourceTree = "<group>"; };
+		FC7EEA671F1387860082122B /* TypeTransfer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypeTransfer.hpp; sourceTree = "<group>"; };
 		FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestRefrence.cpp; sourceTree = "<group>"; };
 		FCD663EF1F0F97BF00C1542B /* TestRefrence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestRefrence.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,11 +68,12 @@
 		FC414EB11F09E46E0079627F /* CPP_Basic_Template */ = {
 			isa = PBXGroup;
 			children = (
-				FC414EB21F09E46E0079627F /* main.cpp */,
 				FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */,
+				FC414EB21F09E46E0079627F /* main.cpp */,
 				FCD663EF1F0F97BF00C1542B /* TestRefrence.hpp */,
 				FC246DDA1F0A47290045929C /* TemplateClass.cpp */,
 				FC246DDB1F0A47290045929C /* TemplateClass.hpp */,
+				FC7EEA651F13874E0082122B /* TypeTransfer */,
 				FC7EEA601F1361890082122B /* T_Single */,
 			);
 			path = CPP_Basic_Template;
@@ -82,6 +86,15 @@
 				FC7EEA621F1361A50082122B /* T_Single.hpp */,
 			);
 			path = T_Single;
+			sourceTree = "<group>";
+		};
+		FC7EEA651F13874E0082122B /* TypeTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				FC7EEA661F1387860082122B /* TypeTransfer.cpp */,
+				FC7EEA671F1387860082122B /* TypeTransfer.hpp */,
+			);
+			path = TypeTransfer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */,
 				FC414EB31F09E46E0079627F /* main.cpp in Sources */,
 				FCD663F01F0F97BF00C1542B /* TestRefrence.cpp in Sources */,
 				FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */,
