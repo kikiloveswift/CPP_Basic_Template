@@ -7,16 +7,18 @@
 //
 
 #include <iostream>
-#include "TemplateClass.hpp"
-#include "TestRefrence.hpp"
+//#include "TemplateClass.hpp" //TEST 1
+//#include "TestRefrence.hpp"  //TEST 2
+
+#include "T_Single.hpp" //TEST 3
 using namespace std;
 
 
 int main(int argc, const char * argv[])
 {
-//    C<int> c1(1,2);
-    testRefrence();
-    
+//    C<int> c1(1,2); //
+//    testRefrence();
+    testSingle_T();
     return 0;
 }
 
