@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void testTypeTransfer();
+
 #endif /* TypeTransfer_hpp */

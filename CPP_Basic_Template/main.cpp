@@ -10,7 +10,8 @@
 //#include "TemplateClass.hpp" //TEST 1
 //#include "TestRefrence.hpp"  //TEST 2
 
-#include "T_Single.hpp" //TEST 3
+//#include "T_Single.hpp" //TEST 3
+#include "TypeTransfer.hpp"
 using namespace std;
 
 
@@ -18,7 +19,8 @@ int main(int argc, const char * argv[])
 {
 //    C<int> c1(1,2); //
 //    testRefrence();
-    testSingle_T();
+//    testSingle_T();
+    testTypeTransfer();
     return 0;
 }
 

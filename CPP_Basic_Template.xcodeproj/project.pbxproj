@@ -68,9 +68,9 @@
 		FC414EB11F09E46E0079627F /* CPP_Basic_Template */ = {
 			isa = PBXGroup;
 			children = (
-				FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */,
 				FC414EB21F09E46E0079627F /* main.cpp */,
 				FCD663EF1F0F97BF00C1542B /* TestRefrence.hpp */,
+				FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */,
 				FC246DDA1F0A47290045929C /* TemplateClass.cpp */,
 				FC246DDB1F0A47290045929C /* TemplateClass.hpp */,
 				FC7EEA651F13874E0082122B /* TypeTransfer */,
