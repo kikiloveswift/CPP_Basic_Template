@@ -10,6 +10,8 @@
 		FC414EB31F09E46E0079627F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC414EB21F09E46E0079627F /* main.cpp */; };
 		FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA611F1361A50082122B /* T_Single.cpp */; };
 		FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA661F1387860082122B /* TypeTransfer.cpp */; };
+		FCBD8CB81F14B8F1007196E0 /* ExceptionFun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCBD8CB61F14B8F1007196E0 /* ExceptionFun.cpp */; };
+		FCBD8CBC1F14CF19007196E0 /* STL_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCBD8CBA1F14CF19007196E0 /* STL_01.cpp */; };
 		FCD663F01F0F97BF00C1542B /* TestRefrence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,10 @@
 		FC7EEA621F1361A50082122B /* T_Single.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = T_Single.hpp; sourceTree = "<group>"; };
 		FC7EEA661F1387860082122B /* TypeTransfer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypeTransfer.cpp; sourceTree = "<group>"; };
 		FC7EEA671F1387860082122B /* TypeTransfer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypeTransfer.hpp; sourceTree = "<group>"; };
+		FCBD8CB61F14B8F1007196E0 /* ExceptionFun.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExceptionFun.cpp; sourceTree = "<group>"; };
+		FCBD8CB71F14B8F1007196E0 /* ExceptionFun.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExceptionFun.hpp; sourceTree = "<group>"; };
+		FCBD8CBA1F14CF19007196E0 /* STL_01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STL_01.cpp; sourceTree = "<group>"; };
+		FCBD8CBB1F14CF19007196E0 /* STL_01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = STL_01.hpp; sourceTree = "<group>"; };
 		FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestRefrence.cpp; sourceTree = "<group>"; };
 		FCD663EF1F0F97BF00C1542B /* TestRefrence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestRefrence.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +79,8 @@
 				FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */,
 				FC246DDA1F0A47290045929C /* TemplateClass.cpp */,
 				FC246DDB1F0A47290045929C /* TemplateClass.hpp */,
+				FCBD8CBD1F14CF1D007196E0 /* STL */,
+				FCBD8CB91F14B8F5007196E0 /* Exception */,
 				FC7EEA651F13874E0082122B /* TypeTransfer */,
 				FC7EEA601F1361890082122B /* T_Single */,
 			);
@@ -95,6 +103,24 @@
 				FC7EEA671F1387860082122B /* TypeTransfer.hpp */,
 			);
 			path = TypeTransfer;
+			sourceTree = "<group>";
+		};
+		FCBD8CB91F14B8F5007196E0 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				FCBD8CB61F14B8F1007196E0 /* ExceptionFun.cpp */,
+				FCBD8CB71F14B8F1007196E0 /* ExceptionFun.hpp */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		FCBD8CBD1F14CF1D007196E0 /* STL */ = {
+			isa = PBXGroup;
+			children = (
+				FCBD8CBA1F14CF19007196E0 /* STL_01.cpp */,
+				FCBD8CBB1F14CF19007196E0 /* STL_01.hpp */,
+			);
+			path = STL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBD8CBC1F14CF19007196E0 /* STL_01.cpp in Sources */,
 				FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */,
 				FC414EB31F09E46E0079627F /* main.cpp in Sources */,
+				FCBD8CB81F14B8F1007196E0 /* ExceptionFun.cpp in Sources */,
 				FCD663F01F0F97BF00C1542B /* TestRefrence.cpp in Sources */,
 				FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */,
 			);

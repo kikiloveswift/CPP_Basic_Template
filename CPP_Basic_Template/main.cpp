@@ -11,7 +11,8 @@
 //#include "TestRefrence.hpp"  //TEST 2
 
 //#include "T_Single.hpp" //TEST 3
-#include "TypeTransfer.hpp"
+//#include "TypeTransfer.hpp"
+#include "STL_01.hpp"
 using namespace std;
 
 
@@ -20,7 +21,8 @@ int main(int argc, const char * argv[])
 //    C<int> c1(1,2); //
 //    testRefrence();
 //    testSingle_T();
-    testTypeTransfer();
+//    testTypeTransfer();
+    testSTL();
     return 0;
 }
 
