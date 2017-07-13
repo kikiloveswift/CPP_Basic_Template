@@ -99,8 +99,19 @@ void testSTL3()
     cout << "res is " << res << endl;
 }
 
+void testSTL4()
+{
+    vector<int> v = { 3, 1, 4 };
+    auto vi = rbegin(v);
+    cout << *vi << '\n';
+    
+    int a[] = { -5, 10, 15 };
+    auto ai = rbegin(a);
+    cout << *ai << '\n';
+}
+
 void testSTL()
 {
-    testSTL2();
+    testSTL4();
 }
 
