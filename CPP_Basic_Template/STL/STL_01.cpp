@@ -102,12 +102,19 @@ void testSTL3()
 void testSTL4()
 {
     vector<int> v = { 3, 1, 4 };
+    //使用auto关键字让编译器自己确定类型
     auto vi = rbegin(v);
     cout << *vi << '\n';
     
     int a[] = { -5, 10, 15 };
     auto ai = rbegin(a);
     cout << *ai << '\n';
+    
+    vector<int> v1 = { 1, 34, 56, 768, 23, 67, 78, 65, 67};
+    vector<int>::iterator pt = find(v1.begin(), v1.end(), 23);
+    //上面的 vector<int>::iterator 可以直接转为 auto 让编译器自己确定类型
+    int position = (int)distance(v1.begin(), pt);
+    cout << " posion at " << position << endl;
 }
 
 void testSTL()
