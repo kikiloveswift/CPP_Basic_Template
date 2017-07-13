@@ -27,6 +27,11 @@ public:
     string name;
 };
 
+bool isPreciate(int i )
+{
+    return (i % 2 == 0);
+}
+
 //Vector 装普通数据类型
 void testSTL1()
 {
@@ -60,6 +65,38 @@ void testSTL2()
         cout << "t name is " << t.name << "t age is " <<t.age << endl;
     }
     cout << "t1.size after " << v1.size() << endl;
+}
+
+//Vector 算法
+void testSTL3()
+{
+    vector<int> v1;
+    v1.push_back(1);
+    v1.push_back(8);
+    v1.push_back(4);
+    v1.push_back(6);
+    v1.push_back(1);
+    //统计v1中1出现的次数
+    int num = (int)count(v1.begin(), v1.end(), 1);
+    cout << num << endl;
+    
+    //统计V1中能被2整除的数的次数
+    int num2 = (int)count_if(v1.begin(), v1.end(), isPreciate);
+    cout << num2 << endl;
+    
+    vector<Teacher> v2;
+    Teacher t1(21, "a");
+    Teacher t2(22, "b");
+    Teacher t3(23, "c");
+    Teacher t4(24, "d");
+    Teacher t5(26, "e");
+    v2.push_back(t1);
+    v2.push_back(t2);
+    v2.push_back(t3);
+    v2.push_back(t4);
+    v2.push_back(t5);
+    int res = (int)count_if(v2.begin(), v2.end(), [](Teacher t){return (t.age % 2 == 0);});
+    cout << "res is " << res << endl;
 }
 
 void testSTL()
