@@ -115,6 +115,9 @@ void testSTL4()
     //上面的 vector<int>::iterator 可以直接转为 auto 让编译器自己确定类型
     int position = (int)distance(v1.begin(), pt);
     cout << " posion at " << position << endl;
+    //vector可以使用数组的特性 同理也可以使用at
+    v1[4] = 5;
+    v1.at(5) = 6;
 }
 
 void testSTL()

@@ -12,7 +12,7 @@
 
 //#include "T_Single.hpp" //TEST 3
 //#include "TypeTransfer.hpp"
-#include "STL_01.hpp"
+//#include "STL_01.hpp"
 using namespace std;
 
 
@@ -22,7 +22,6 @@ int main(int argc, const char * argv[])
 //    testRefrence();
 //    testSingle_T();
 //    testTypeTransfer();
-    testSTL();
     return 0;
 }
 
