@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1C07631F1B2BBF0064D783 /* Pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC1C07611F1B2BBF0064D783 /* Pointer.cpp */; };
 		FC414EB31F09E46E0079627F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC414EB21F09E46E0079627F /* main.cpp */; };
 		FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA611F1361A50082122B /* T_Single.cpp */; };
 		FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA661F1387860082122B /* TypeTransfer.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC1C07611F1B2BBF0064D783 /* Pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pointer.cpp; sourceTree = "<group>"; };
+		FC1C07621F1B2BBF0064D783 /* Pointer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pointer.hpp; sourceTree = "<group>"; };
 		FC246DDA1F0A47290045929C /* TemplateClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TemplateClass.cpp; sourceTree = "<group>"; };
 		FC246DDB1F0A47290045929C /* TemplateClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TemplateClass.hpp; sourceTree = "<group>"; };
 		FC414EAF1F09E46E0079627F /* CPP_Basic_Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP_Basic_Template; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC1C07651F1B2C6D0064D783 /* Pointer */ = {
+			isa = PBXGroup;
+			children = (
+				FC1C07621F1B2BBF0064D783 /* Pointer.hpp */,
+				FC1C07611F1B2BBF0064D783 /* Pointer.cpp */,
+			);
+			path = Pointer;
+			sourceTree = "<group>";
+		};
 		FC414EA61F09E46E0079627F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 				FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */,
 				FC246DDA1F0A47290045929C /* TemplateClass.cpp */,
 				FC246DDB1F0A47290045929C /* TemplateClass.hpp */,
+				FC1C07651F1B2C6D0064D783 /* Pointer */,
 				FCBD8CBD1F14CF1D007196E0 /* STL */,
 				FCBD8CB91F14B8F5007196E0 /* Exception */,
 				FC7EEA651F13874E0082122B /* TypeTransfer */,
@@ -154,6 +167,7 @@
 				TargetAttributes = {
 					FC414EAE1F09E46E0079627F = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -185,6 +199,7 @@
 				FCBD8CB81F14B8F1007196E0 /* ExceptionFun.cpp in Sources */,
 				FCD663F01F0F97BF00C1542B /* TestRefrence.cpp in Sources */,
 				FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */,
+				FC1C07631F1B2BBF0064D783 /* Pointer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,16 +308,22 @@
 		FC414EB71F09E46E0079627F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		FC414EB81F09E46E0079627F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
