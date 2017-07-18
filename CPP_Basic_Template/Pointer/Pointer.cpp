@@ -34,16 +34,33 @@ void testP_01()
      把之前的内存复制到新区域
     */
 }
-void testPointer()
+
+//指针的双重间接访问
+void testP_02()
+{
+    int a = 12;
+    int *b = &a; //b 指向a的地址 *b = a, 12
+    int **c = &b; // c = &b, *c = b, **c = *b = a, 12
+    printf("%d",**c);
+    
+}
+
+void testPointer_1()
 {
     char *titles[] = {"aa","bb","cc","dd"};
     char **beginT[3];
-//    char **anotherT[4];
+    //    char **anotherT[4];
     beginT[0] = &titles[0];
     beginT[1] = &titles[1];
     beginT[2] = &titles[2];
     
     printf("%s\n",*beginT[1]);
+}
+
+
+void testPointer()
+{
+    testP_02();
 }
 
 

@@ -12,12 +12,9 @@
 
 //#include "T_Single.hpp" //TEST 3
 //#include "TypeTransfer.hpp"
-<<<<<<< HEAD
 #include "STL_01.hpp"
 #include "Pointer.hpp"
-=======
 //#include "STL_01.hpp"
->>>>>>> origin/master
 using namespace std;
 
 
@@ -27,11 +24,9 @@ int main(int argc, const char * argv[])
 //    testRefrence();
 //    testSingle_T();
 //    testTypeTransfer();
-<<<<<<< HEAD
 //    testSTL();
     testPointer();
-=======
->>>>>>> origin/master
+    
     return 0;
 }
 
