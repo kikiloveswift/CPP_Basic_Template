@@ -9,6 +9,7 @@
 #include "Pointer.hpp"
 #include <iostream>
 
+
 //静态、全局指针和malloc
 void testP_01()
 {
@@ -42,8 +43,20 @@ void testP_02()
     int *b = &a; //b 指向a的地址 *b = a, 12
     int **c = &b; // c = &b, *c = b, **c = *b = a, 12
     printf("%d",**c);
-    
 }
+
+//指针函数 返回值是一个指向整型的指针
+int *f()
+{
+    int a = 10;
+    int *p = &a; //p 是内存地址 *p = 10
+    return p;
+}
+
+int (*m)()
+{
+    
+};
 
 void testPointer_1()
 {
@@ -57,10 +70,16 @@ void testPointer_1()
     printf("%s\n",*beginT[1]);
 }
 
+void testP_03()
+{
+    int *p = f();
+    printf("p is %d\n",*p);
+}
+
 
 void testPointer()
 {
-    testP_02();
+    testP_03();
 }
 
 
