@@ -1,9 +1,11 @@
 # CPP_Basic_Template
 
-### This is a C++ test         
-    Abount:
+### C++ 内容的测试
+#### 包含：
+    
+    指针
+    STL
+    异常崩溃
+    强制类型转换       
 
-    Pointer
-    STL 
-    Exception
-    TypeTransfer
+
