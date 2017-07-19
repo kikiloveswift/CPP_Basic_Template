@@ -40,7 +40,6 @@ void testAP_01()
  char *(*c[10])(int **p) => (*c[10]) 是一个指针数组, (int **p)在右侧 说明是一个函数
  int **p 是函数参数 char* 是函数的返回值类型 合起来就是 c是一个拥有10个元素的指针数组，每一个
  指针指向一个原型为 char *func(int **p)的函数
- 
  */
 
 void testAdvancedPointer()

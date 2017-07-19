@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC1C07631F1B2BBF0064D783 /* Pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC1C07611F1B2BBF0064D783 /* Pointer.cpp */; };
 		FC2915EB1F1F2F7200CB3153 /* AdvancedPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC2915E91F1F2F7200CB3153 /* AdvancedPointer.cpp */; };
+		FC2915F01F1F585500CB3153 /* Algorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC2915EE1F1F585500CB3153 /* Algorithm.cpp */; };
 		FC414EB31F09E46E0079627F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC414EB21F09E46E0079627F /* main.cpp */; };
 		FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA611F1361A50082122B /* T_Single.cpp */; };
 		FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7EEA661F1387860082122B /* TypeTransfer.cpp */; };
@@ -36,6 +37,8 @@
 		FC246DDB1F0A47290045929C /* TemplateClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TemplateClass.hpp; sourceTree = "<group>"; };
 		FC2915E91F1F2F7200CB3153 /* AdvancedPointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedPointer.cpp; sourceTree = "<group>"; };
 		FC2915EA1F1F2F7200CB3153 /* AdvancedPointer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AdvancedPointer.hpp; sourceTree = "<group>"; };
+		FC2915EE1F1F585500CB3153 /* Algorithm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Algorithm.cpp; sourceTree = "<group>"; };
+		FC2915EF1F1F585500CB3153 /* Algorithm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Algorithm.hpp; sourceTree = "<group>"; };
 		FC414EAF1F09E46E0079627F /* CPP_Basic_Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP_Basic_Template; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC414EB21F09E46E0079627F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FC7EEA611F1361A50082122B /* T_Single.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = T_Single.cpp; sourceTree = "<group>"; };
@@ -79,6 +82,15 @@
 			path = AdvancedPointer;
 			sourceTree = "<group>";
 		};
+		FC2915F11F1F585900CB3153 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				FC2915EE1F1F585500CB3153 /* Algorithm.cpp */,
+				FC2915EF1F1F585500CB3153 /* Algorithm.hpp */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
 		FC414EA61F09E46E0079627F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 				FCD663EE1F0F97BF00C1542B /* TestRefrence.cpp */,
 				FC246DDA1F0A47290045929C /* TemplateClass.cpp */,
 				FC246DDB1F0A47290045929C /* TemplateClass.hpp */,
+				FC2915F11F1F585900CB3153 /* Algorithm */,
 				FC2915ED1F1F2F7F00CB3153 /* AdvancedPointer */,
 				FC1C07651F1B2C6D0064D783 /* Pointer */,
 				FCBD8CBD1F14CF1D007196E0 /* STL */,
@@ -210,6 +223,7 @@
 				FC7EEA681F1387860082122B /* TypeTransfer.cpp in Sources */,
 				FC414EB31F09E46E0079627F /* main.cpp in Sources */,
 				FC2915EB1F1F2F7200CB3153 /* AdvancedPointer.cpp in Sources */,
+				FC2915F01F1F585500CB3153 /* Algorithm.cpp in Sources */,
 				FCBD8CB81F14B8F1007196E0 /* ExceptionFun.cpp in Sources */,
 				FCD663F01F0F97BF00C1542B /* TestRefrence.cpp in Sources */,
 				FC7EEA631F1361A50082122B /* T_Single.cpp in Sources */,
