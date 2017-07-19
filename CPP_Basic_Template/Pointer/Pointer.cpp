@@ -9,6 +9,7 @@
 #include "Pointer.hpp"
 #include <iostream>
 
+static int i = 0;
 
 //静态、全局指针和malloc
 void testP_01()
@@ -53,11 +54,6 @@ int *f()
     return p;
 }
 
-int (*m)()
-{
-    
-};
-
 void testPointer_1()
 {
     char *titles[] = {"aa","bb","cc","dd"};
@@ -69,11 +65,23 @@ void testPointer_1()
     
     printf("%s\n",*beginT[1]);
 }
+void (*funp)(int);
 
+
+void myfun(int x)
+{
+    std::cout << "第" << ++i << "调用此函数" <<"x is " << x << std::endl;
+}
 void testP_03()
 {
     int *p = f();
     printf("p is %d\n",*p);
+    
+    myfun(10);
+    funp = &myfun;
+    (*funp)(200);
+    //myfun 其实也是一个函数指针 和funp是一样的，myfun是一个函数指针常量，而funp是一个函数指针变量。
+    // myfun只可以指向 代码70行的那个函数，而funp可以指向任意函数。
 }
 
 

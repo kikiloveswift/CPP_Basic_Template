@@ -14,6 +14,7 @@
 //#include "TypeTransfer.hpp"
 #include "STL_01.hpp"
 #include "Pointer.hpp"
+#include "AdvancedPointer.hpp"
 //#include "STL_01.hpp"
 using namespace std;
 
@@ -25,7 +26,8 @@ int main(int argc, const char * argv[])
 //    testSingle_T();
 //    testTypeTransfer();
 //    testSTL();
-    testPointer();
+//    testPointer();
+    testAdvancedPointer();
     
     return 0;
 }
