@@ -16,6 +16,7 @@
 #include "Pointer.hpp"
 #include "AdvancedPointer.hpp"
 //#include "STL_01.hpp"
+#include "Marco.hpp"
 using namespace std;
 
 
@@ -27,8 +28,8 @@ int main(int argc, const char * argv[])
 //    testTypeTransfer();
 //    testSTL();
 //    testPointer();
-    testAdvancedPointer();
-    
+//    testAdvancedPointer();
+    testMarco();
     return 0;
 }
 
