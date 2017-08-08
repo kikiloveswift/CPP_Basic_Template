@@ -17,6 +17,7 @@
 #include "AdvancedPointer.hpp"
 //#include "STL_01.hpp"
 #include "Marco.hpp"
+#include "Algorithm.hpp"
 using namespace std;
 
 
@@ -29,7 +30,8 @@ int main(int argc, const char * argv[])
 //    testSTL();
 //    testPointer();
 //    testAdvancedPointer();
-    testMarco();
+//    testMarco();
+//    testAlgorithm();
     return 0;
 }
 

@@ -67,7 +67,6 @@ void testPointer_1()
 }
 void (*funp)(int);
 
-
 void myfun(int x)
 {
     std::cout << "第" << ++i << "调用此函数" <<"x is " << x << std::endl;
