@@ -18,6 +18,7 @@
 //#include "STL_01.hpp"
 #include "Marco.hpp"
 #include "Algorithm.hpp"
+#include "LinkList.hpp"
 using namespace std;
 
 
@@ -32,6 +33,8 @@ int main(int argc, const char * argv[])
 //    testAdvancedPointer();
 //    testMarco();
 //    testAlgorithm();
+    testSeqList1();
+    system("pause");
     return 0;
 }
 

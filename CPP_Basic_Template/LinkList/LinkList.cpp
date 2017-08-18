@@ -7,32 +7,69 @@
 //
 
 #include "LinkList.hpp"
-#include "seqlist.hpp"
+#include <iostream>
+#include <string>
+#include <stdio.h>
+#include <time.h>
 
-typedef  struct Teacher
+class Student
 {
-    char name[64];
-    int age;
-} T;
+    
+public:
+    float score;
+    std::string name;
+    Student *node;
+    Student(std::string name, int score)
+    {
+        this -> name = name;
+        this -> score = score;
+    }
+    ~Student()
+    {
+        std::cout << "dead" << std::endl;
+    }
+};
+
+void testrandom()
+{
+    time_t times;
+    unsigned int t = (int)time(&times);
+    srand(t);
+    int a[10];
+    for (int i = 0; i < 10; i ++)
+    {
+        a[i] = rand() % 100;
+        printf("a[%d] = %d\n",i,a[i]);
+    }
+    std::cout << std::hex << a << std::endl;
+    
+    
+    
+}
+
 
 void testSeqList1()
 {
-//    SeqList *list = NULL;
-//    list = SeqList_Create(10);
-//    T t1,t2,t3,t4;
-//    t1.age = 12;
-//    t2.age = 13;
-//    t3.age = 14;
-//    t4.age = 15;
-//    int ret = -1;
-//    ret = SeqList_Insert(list, (SeqListNode *)&t1, 0);
-//    ret = SeqList_Insert(list, (SeqListNode *)&t2, 0);
-//    ret = SeqList_Insert(list, (SeqListNode *)&t3, 0);
-//    ret = SeqList_Insert(list, (SeqListNode *)&t4, 0);
-//    
-//    for (int i = 0; i < SeqList_Length(list); i ++)
-//    {
-//        Teacher *t = (Teacher *)SeqList_Get(list, i);
-//        printf("t age is %d",t->age);
-//    }
+    Student s1("s1",10);
+    Student s2("s2",20);
+    Student s3("s3",30);
+    Student s4("s4",40);
+    Student s5("s5",50);
+    s1.node = &s2;
+    s2.node = &s3;
+    s3.node = &s4;
+    s4.node = &s5;
+    s5.node = NULL;
+    
+    Student header = s1;
+    do
+    {
+        std::cout << "student name is " << header.name << " score is " << header.score << std::endl;
+        header = *(header.node);
+    }
+    while (header.node != NULL);
+    testrandom();
+    
 }
+
+
